@@ -29,7 +29,7 @@
     body.dark {
   background: var(--background-dark);
   color: var(--text-dark);
-  display: flex;
+  display: block;
 }
 
 body.dark .container {
@@ -93,6 +93,10 @@ body.dark a {
 }
 
 @media (max-width: 768px) {
+  main {
+    margin-left: 0;
+    width: 100%;
+  }
   nav {
     transform: translateX(-100%);
   }
@@ -103,10 +107,12 @@ body.dark a {
     display: block;
   }
   @media (min-width: 769px) {
+  @media (min-width: 769px) {
   main {
     margin-left: 220px;
     width: calc(100% - 220px);
   }
+}
 }
 }
 
