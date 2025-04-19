@@ -93,10 +93,23 @@ body.dark a {
 }
 
 @media (max-width: 768px) {
-  main {
-    margin-left: 0;
-    width: 100%;
+  nav {
+    transform: translateX(-100%);
   }
+  nav.active {
+    transform: translateX(0);
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+  @media (min-width: 769px) {
+  main {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+  }
+}
+}
   nav {
     transform: translateX(-100%);
   }
@@ -397,7 +410,7 @@ flex-direction: column;$2
 </div>
 
     <footer>
-      Última actualización: Abril 2025 — Hecho con 💻 y café ☕
+      Última actualización: Abril 2025
     </footer>
   </main>
 <script>
