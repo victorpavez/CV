@@ -292,6 +292,45 @@ flex-direction: column;$2
     display: block;
   }
   @media print {
+    nav, .menu-toggle, .overlay, .theme-toggle {
+      display: none !important;
+    }
+    body {
+      background: white !important;
+      color: black !important;
+    }
+    .container {
+      background: white !important;
+      box-shadow: none;
+    }
+    header {
+      background: white !important;
+      color: black !important;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-align: left;
+    }
+    header img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: none;
+      margin-bottom: 0;
+    }
+    .header-title {
+      font-size: 1.6rem;
+      margin: 0;
+    }
+    .header-subtitle {
+      font-size: 1rem;
+      margin: 0;
+    }
+    main {
+      margin: 0;
+      width: 100%;
+    }
     header {
       display: flex;
       align-items: center;
