@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Victor Pavez</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary-color: #1e90ff;
+      --background-light: #f5f5f5;
+      --background-dark: #121212;
+      --text-light: #333;
+      --text-dark: #eee;
+      --card-light: #fff;
+      --card-dark: #1e1e1e;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--background-light);
+      color: var(--text-light);
+      scroll-behavior: smooth;
+      transition: background 0.3s, color 0.3s;
+      display: flex;
+    }
+    body.dark {
+  background: var(--background-dark);
+  color: var(--text-dark);
+  display: flex;
+}
+
+body.dark .container {
+  background: var(--card-dark);
+  color: var(--text-dark);
+}
+
+body.dark .tag {
+  background: var(--primary-color);
+  color: white;
+}
+
+body.dark a {
+  color: var(--text-dark);
+}
+    nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+  z-index: 1001;
+      width: 220px;
+      background: var(--card-light);
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 2rem;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+    body.dark nav {
+      background: var(--card-dark);
+    }
+    nav a {
+      margin: 1rem 0;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .menu-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  z-index: 1100;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    transform: translateX(-100%);
+  }
+  nav.active {
+    transform: translateX(0);
+  }
+  .menu-toggle {
+    display: block;
+  }
+  main {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+main {
+      margin-left: 220px;
+      width: calc(100% - 220px);
+    }
+    header {
+      background: linear-gradient(90deg, #1e90ff, #0073e6);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeIn 1.2s ease-out;
+      position: relative;
+    }
+    .theme-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #1e90ff;
+      transition: background 0.3s;
+    }
+    .theme-toggle:hover {
+      background: #e0e0e0;
+    }
+    .header-title {
+      font-size: 2.8rem;
+      margin-bottom: 0.3rem;
+      font-weight: bold;
+    }
+    .header-subtitle {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+    <section id="cursos" class="section">
+  <h2>Certificaciones y Cursos</h2>
+  <ul>
+flex-direction: column;$2
+    
+    .contact-item:hover {
+      transform: scale(1.05);
+    }
+    .download-btn {
+      margin-top: 1.5rem;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: white;
+      color: #1e90ff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+    }
+    .download-btn:hover {
+      background: #e6e6e6;
+      transform: scale(1.05);
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: var(--card-light);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      animation: slideUp 0.8s ease-out;
+      transition: background 0.3s;
+    }
+    
+    h1, h2 {
+      margin-bottom: 0.5rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .section h2 {
+      position: relative;
+    }
+    .section h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: var(--primary-color);
+      border-radius: 2px;
+      margin-top: 8px;
+      animation: growLine 0.8s ease forwards;
+    }
+    .tag {
+      display: inline-block;
+      background: var(--primary-color);
+      color: white;
+      padding: 0.3rem 0.7rem;
+      border-radius: 5px;
+      margin: 0.2rem;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+    .tag:hover {
+      background: #145da0;
+    }
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      margin: 2rem 0;
+      font-size: 0.9rem;
+      color: #666;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes growLine {
+      from { width: 0; }
+      to { width: 60px; }
+    }
+    nav a.active {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    transition: background 0.3s;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+  }
+  .overlay.active {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="overlay" onclick="closeMenu()"></div>
+  <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">☰ Menú</button>
+  <nav>
+    <a href="#contacto">Contacto</a>
+    <a href="#resumen">Resumen</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#educacion">Educación</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="/mnt/data/Curriculum Profesional Sin Foto Sencillo Blanco y Negro (12).pdf" download class="download-btn" style="margin-top:auto;margin-bottom:2rem">📄 Descargar CV</a>
+  </nav>
+  <main>
+    <header>
+  <button class="theme-toggle" onclick="document.body.classList.toggle('dark')">🌙/☀️</button>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <img src="/mnt/data/perfil.jpeg" alt="Foto de perfil" style="border-radius: 50%; width: 120px; height: 120px; object-fit: cover; margin-bottom: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+
+      <div class="header-title">Victor Pavez</div>
+      <div class="header-subtitle">Ingeniero Industrial</div>
+      
+        
+      </div>
+      
+    </header>
+  <div class="container">
+<section id="contacto" class="section">
+  <h2>Contacto</h2>
+  <div class="header-contact" style="margin-bottom: 2rem; flex-direction: column; align-items: flex-start;">
+    <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Rincón de los Sauces, Neuquén</div>
+    <div class="contact-item"><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5492993251398?text=Hola%20Victor%2C%20vi%20tu%20CV%20y%20me%20gustar%C3%ADa%20hablar%20contigo" target="_blank">2993251398</a></div>
+    <div class="contact-item"><i class="fas fa-envelope"></i> <a href="mailto:ingvictorpavez@gmail.com">ingvictorpavez@gmail.com</a></div>
+    <div class="contact-item"><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/victorpavez" target="_blank">linkedin.com/in/victorpavez</a></div>
+  </div>
+</section>
+
+<section id="resumen" class="section">
+  <h2>Resumen Profesional</h2>
+  <p>29 años, autónomo, apasionado y con pensamiento crítico. Capacidad de liderazgo y adaptación a entornos desafiantes. Busco retos en el sector petrolero. Disposición a reubicación según necesidades.</p>
+</section>
+
+  <section id="experiencia" class="section">
+    <h2>Experiencia Profesional</h2>
+    <p><strong>Municipalidad RDLS</strong> – Obras y Gestión Documental (Mar 2025 - Actual)</p>
+<ul>
+  <li>Planificación y control documental de proyectos de obras públicas.</li>
+  <li>Diseño y ejecución de automatizaciones con Google Apps Script.</li>
+  <li>Desarrollo de sistema de trazabilidad con hoja de ruta por etapas.</li>
+  <li>Implementación de control por roles en aprobación de proyectos.</li>
+  <li>Generación de dashboard visual para seguimiento de avance y documentación.</li>
+  <li>Coordinación técnica con áreas de legales, contrataciones, prensa y económicas.</li>
+  <li>Aplicación de principios ISO 9001 para trazabilidad, orden y eficiencia.</li>
+</ul>
+    <p><strong>SIP Servicio Instrumental Petrolero</strong> – Auditor Interno y Gestión de Materiales (Ago 2024 - Actual)</p>
+<ul>
+  <li>Supervisión de mantenimiento preventivo y correctivo en equipos de instrumentación.</li>
+  <li>Planificación y ejecución de auditorías internas bajo normativa ISO 9001.</li>
+  <li>Gestión de stock de materiales y consumibles críticos para operación en campo.</li>
+  <li>MRP de insumos para tareas de calibración y mantenimiento industrial.</li>
+  <li>Interacción con clientes del sector petrolero para validación de cumplimiento técnico.</li>
+</ul>
+    <p><strong>Sand Box</strong> – Co-Fundador (Ene 2021 - Ago 2024)</p>
+<ul>
+  <li>Diseño e implementación de sistemas domóticos para automatización residencial e industrial.</li>
+  <li>Integración de sensores, controladores y plataformas IoT aplicadas a la industria.</li>
+  <li>Desarrollo de soluciones de visualización de datos y monitoreo remoto.</li>
+  <li>Planificación estratégica, liderazgo de equipo y gestión de proyectos tecnológicos.</li>
+  <li>Enlace técnico-comercial con clientes del sector energético para proyectos de innovación.</li>
+</ul>
+    <p><strong>Docente</strong> – Electromecánica, Física y Química (Ago 2024 - Actual)</p>
+    <ul>
+      <li>Clases teóricas y prácticas en formación técnica.</li>
+    </ul>
+    <p><strong>Bans Servicios</strong> – Prácticas Profesionales (Mar 2020 - Ene 2021)</p>
+<ul>
+  <li>Participación en análisis técnico-económico de proyectos vinculados al sector energético.</li>
+  <li>Simulación de escenarios con Cristal Ball para evaluación de riesgos y costos.</li>
+  <li>Visualización de datos con Power BI y desarrollo de dashboards estratégicos.</li>
+  <li>Revisión de pliegos técnicos y participación en procesos de licitación pública y privada.</li>
+  <li>Soporte en estimaciones de costos, cronogramas y rendimientos orientado a obras petroleras.</li>
+</ul>
+  </section>
+
+  <section id="educacion" class="section">
+    <h2>Educación</h2>
+    <p><strong>Universidad Tecnológica Nacional</strong> – Ingeniería Industrial</p>
+    <p><strong>EPET N°16</strong> – Técnico Electromecánico</p>
+  </section>
+
+  <section id="cursos" class="section">
+  <h2>Certificaciones y Cursos</h2>
+  <ul>
+<li>Licitaciones – UTN</li>
+      <li>Auditor Interno ISO – UTN</li>
+      <li>Certificaciones Platzi: Python, Numpy y Pandas, Excel Avanzado, SQL, Power BI, Tableau, Análisis de Datos</li>
+      <li>Inglés Avanzado – Cambridge</li>
+    </ul>
+  </section>
+
+  <section id="habilidades" class="section">
+  <h2>Habilidades Técnicas</h2>
+<span class="tag">Google Apps Script</span>
+    <span class="tag">QGIS</span>
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">JavaScript</span>
+        <span class="tag">Git/GitHub</span>
+    <span class="tag">Gestión de Proyectos</span>
+    <span class="tag">Control de Calidad</span>
+    <span class="tag">SAP</span>
+    <span class="tag">Power BI</span>
+    <span class="tag">Excel</span>
+    <span class="tag">SQL</span>
+    <span class="tag">AutoCAD</span>
+    <span class="tag">Inventor</span>
+    <span class="tag">Microsoft Project</span>
+        <span class="tag">Normas ISO / IEC / API / IRAM</span>
+    <span class="tag">Cristal Ball</span>
+    <span class="tag">Análisis de Datos</span>
+  </section>
+
+  <section id="idiomas" class="section">
+    <h2>Idiomas</h2>
+    <ul>
+      <li>Español – Nativo</li>
+      <li>Inglés – Avanzado</li>
+    </ul>
+  </section>
+</div>
+
+    <footer>
+      Última actualización: Abril 2025 — Hecho con 💻 y café ☕
+    </footer>
+  </main>
+<script>
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('nav a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+  function toggleMenu() {
+  const nav = document.querySelector('nav');
+  const overlay = document.querySelector('.overlay');
+  const toggle = document.getElementById('menuToggle');
+  nav.classList.toggle('active');
+  overlay.classList.toggle('active');
+  toggle.textContent = nav.classList.contains('active') ? '✖ Cerrar' : '☰ Menú';
+}
+
+  function closeMenu() {
+  const toggle = document.getElementById('menuToggle');
+  document.querySelector('nav').classList.remove('active');
+  document.querySelector('.overlay').classList.remove('active');
+  toggle.textContent = '☰ Menú';
+}
+</script>
+</body>
+</html>
