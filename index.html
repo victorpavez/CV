@@ -291,6 +291,44 @@ flex-direction: column;$2
   .overlay.active {
     display: block;
   }
+  @media print {
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-align: left;
+    }
+    header img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: none;
+      margin-bottom: 0;
+    }
+    .header-title {
+      font-size: 1.6rem;
+      margin: 0;
+    }
+    .header-subtitle {
+      font-size: 1rem;
+      margin: 0;
+    }
+    nav, .menu-toggle, .overlay, .theme-toggle {
+      display: none !important;
+    }
+    body {
+      background: white;
+      color: black;
+    }
+    main {
+      margin: 0;
+      width: 100%;
+    }
+    .container {
+      box-shadow: none;
+    }
+  }
 </style>
 </head>
 <body>
@@ -334,17 +372,15 @@ flex-direction: column;$2
   <p>29 años, autónomo, apasionado y con pensamiento crítico. Capacidad de liderazgo y adaptación a entornos desafiantes. Busco retos en el sector petrolero. Disposición a reubicación según necesidades.</p>
 </section>
 
-  <section id="experiencia" class="section">
-    <h2>Experiencia Profesional</h2>
-    <p><strong>Municipalidad RDLS</strong> – Obras y Gestión Documental (Mar 2025 - Actual)</p>
+  <p><strong>Funciones adicionales vinculadas a gestión económica y control:</strong></p>
 <ul>
-  <li>Planificación y control documental de proyectos de obras públicas.</li>
-  <li>Diseño y ejecución de automatizaciones con Google Apps Script.</li>
-  <li>Desarrollo de sistema de trazabilidad con hoja de ruta por etapas.</li>
-  <li>Implementación de control por roles en aprobación de proyectos.</li>
-  <li>Generación de dashboard visual para seguimiento de avance y documentación.</li>
-  <li>Coordinación técnica con áreas de legales, contrataciones, prensa y económicas.</li>
-  <li>Aplicación de principios ISO 9001 para trazabilidad, orden y eficiencia.</li>
+  <li>Análisis de costos de servicios, control presupuestario, costos laborales, márgenes y ventas.</li>
+  <li>Participación en el Plan Anual (PA) y revisiones periódicas de los servicios asignados.</li>
+  <li>Elaboración de reportes ad-hoc y análisis de resultados financieros.</li>
+  <li>Seguimiento de la contabilidad de costos y colaboración en cierres contables.</li>
+  <li>Supervisión del proceso de certificación y control de facturación y cobranzas.</li>
+  <li>Reporting interno para áreas económico-financieras según cronogramas contables.</li>
+  <li>Comunicación continua con gerencias de servicios para evaluación y gestión de resultados.</li>
 </ul>
     <p><strong>SIP Servicio Instrumental Petrolero</strong> – Auditor Interno y Gestión de Materiales (Ago 2024 - Mar 2025)</p></p>
 <ul>
